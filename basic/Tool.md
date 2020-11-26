@@ -42,3 +42,6 @@
   - curl --trace-ascii debug.txt http://www.example.com/
 
 ## ssh
+
+## netstat
+  - apt-get install net-tools

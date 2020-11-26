@@ -118,4 +118,8 @@ $ scp -r ./django-project root@[ip]:~/app
 ```
 
 
+## execute command permanently & out of terminal
 
+```bash
+$ screen -d -m python manage.py runserver
+```
