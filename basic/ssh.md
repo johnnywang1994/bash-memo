@@ -123,3 +123,23 @@ $ scp -r ./django-project root@[ip]:~/app
 ```bash
 $ screen -d -m python manage.py runserver
 ```
+
+
+## add ssl to linode
+
+[ref link](https://www.linode.com/docs/guides/how-to-install-certbot-on-ubuntu-18-04/)
+
+Install certbot for linode with nginx config
+
+```bash
+$ sudo apt-get update
+$ sudo add-apt-repository ppa:certbot/certbot
+$ sudo apt-get install python-certbot-nginx
+$ sudo certbot --nginx
+```
+
+allow https for ufw
+
+```bash
+sudo ufw allow https
+```
