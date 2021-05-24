@@ -67,3 +67,9 @@ random=$((1 + RANDOM % 10))
 echo $random
 ```
 
+
+### print folder filelist to json
+
+```bash
+ls | awk '{print $0","}' | xargs | awk '{print "["$0"]"}' > index
+```
